@@ -10,16 +10,25 @@ class App extends Component {
   state = {
     friends
   };
-  
+
+  selectCard = id => {
+    const selectedFriend = this.state.friends.indexOf(id)
+    console.log('selectedFriend', selectedFriend)
+    //  this.setState({ friends });
+
+  }
+
+  // rendering to dom
   render() {
     return (
       <Container>
-        <Header>Clicky Memory Game</Header>
+        <Header>Click Memory Game</Header>
 
         {this.state.friends.map(friend => (
-        <GameCards
-          image={friend.image}
-        />
+          <GameCards
+            selectCard={this.selectCard}
+            image={friend.image}
+          />
         ))}
       </Container>
     );
