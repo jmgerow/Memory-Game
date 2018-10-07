@@ -29,19 +29,40 @@ class App extends Component {
 
   // function for when user clicks card
   selectCard = id => {
-    const selectedFriend = this.state.selected.indexOf(id)
-    console.log('selectedFriend', selectedFriend)
-    console.log("id", friends.id)
+    if (this.state.selected.indexOf(id) === -1) {
+      this.addToCurrentScore();
+      this.setState({ selected: this.state.selected.concat(id) });
+    }
+    // console.log('selectedFriend', selectedFriend)
+    // console.log("id", friends.id)
     //  this.setState({ friends });
-    this.setState({ selected: this.state.selected.concat(id) })
+    
     console.log('selected', this.state.selected)
     this.runRandomize()
-  }
+  };
 
-  // randomizes cards when one is clicked
+  // randomizes cards when called
   runRandomize = () => {
     let shuffledCards = randomizeCards(friends);
     this.setState({ friends: shuffledCards });
+  };
+
+  // adds to current score if necessary
+  addToCurrentScore = () => {
+    this.setState({ currentScore: this.state.currentScore + 1 });
+
+    if (this.state.currentScore >= this.state.topScore) {
+      this.setState({ topScore: this.state.topScore + 1 });
+    };
+    if (this.state.currentScore === 11 ) {
+      console.log("winner winner chicken dinner!")
+      this.resetGame();
+    };
+  };
+
+  // resets game
+  resetGame = () => {
+    this.setState({ currentScore: 0 });
   };
 
   // rendering to dom
@@ -64,7 +85,7 @@ class App extends Component {
         ))}
       </Container>
     );
-  }
-}
+  };
+};
 
 export default App;
