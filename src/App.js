@@ -5,6 +5,15 @@ import Container from "./components/Container";
 import GameCards from "./components/GameCards";
 import friends from "./characters.json";
 
+function randomizeCards(array) {
+  for (let i = array.length - 1; i > 0; i--) {
+    let j = Math.floor(Math.random() * (i + 1));
+    [array[i], array[j]] = [array[j], array[i]];
+  }
+  return array;
+}
+
+
 class App extends Component {
 
   state = {
@@ -15,8 +24,13 @@ class App extends Component {
     const selectedFriend = this.state.friends.indexOf(id)
     console.log('selectedFriend', selectedFriend)
     //  this.setState({ friends });
-
+    this.runRandomize()
   }
+
+  runRandomize = () => {
+    let shuffledCards = randomizeCards(friends);
+    this.setState({ friends: shuffledCards });
+  };
 
   // rendering to dom
   render() {
