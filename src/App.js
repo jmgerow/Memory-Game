@@ -32,7 +32,10 @@ class App extends Component {
     if (this.state.selected.indexOf(id) === -1) {
       this.addToCurrentScore();
       this.setState({ selected: this.state.selected.concat(id) });
-    }
+    } else {
+      console.log("you lose!")
+      this.resetGame();
+    };
     // console.log('selectedFriend', selectedFriend)
     // console.log("id", friends.id)
     //  this.setState({ friends });
@@ -63,6 +66,8 @@ class App extends Component {
   // resets game
   resetGame = () => {
     this.setState({ currentScore: 0 });
+    this.setState({ selected: [] });
+
   };
 
   // rendering to dom
