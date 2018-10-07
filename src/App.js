@@ -3,6 +3,7 @@ import './App.css';
 import Header from "./components/Header";
 import Container from "./components/Container";
 import GameCards from "./components/GameCards";
+import Scoreboard from "./components/Scoreboard";
 import friends from "./characters.json";
 
 //function for randomizing how cards are displayed
@@ -47,8 +48,12 @@ class App extends Component {
   render() {
     return (
       <Container>
+        <Scoreboard
+          currentScore={this.state.currentScore}
+          topScore={this.state.topScore}
+         />
         <Header>React Memory Game</Header>
-
+        
         {this.state.friends.map(friend => (
           <GameCards
             selectCard={this.selectCard}
