@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import './App.css';
-// import Header from "./components/Header";
 import Container from "./components/Container";
 import GameCards from "./components/GameCards";
 import Scoreboard from "./components/Scoreboard";
@@ -84,7 +83,6 @@ class App extends Component {
           <h2>To begin, click on any tile. Try to click all of them without clicking the same one twice. Good luck!</h2>
         </Hero>
         <Container>
-
 
 
           {this.state.friends.map(friend => (
