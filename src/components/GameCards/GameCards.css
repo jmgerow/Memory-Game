@@ -7,6 +7,7 @@
   width: 325px;
   box-shadow: 0 3px 6px #999, 0 3px 6px #999;
   text-align: left;
+  transition: transform .2s;
 }
 
 .card > .img-container {
@@ -22,5 +23,9 @@
 .card {
   height: 150px;
   width: 150px;
+}
+
+.card:hover {
+  transform: scale(1.1)
 }
 

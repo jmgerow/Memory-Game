@@ -17,7 +17,6 @@ function randomizeCards(array) {
   return array;
 }
 
-
 class App extends Component {
 
   // setting default state values
@@ -82,7 +81,7 @@ class App extends Component {
         />
         <Hero backgroundImage="">
           <h1>React Memory Game</h1>
-          <h2>To begin, click on any tile. Try to click all of them without clicking any one twice. Good luck!</h2>
+          <h2>To begin, click on any tile. Try to click all of them without clicking the same one twice. Good luck!</h2>
         </Hero>
         <Container>
 
