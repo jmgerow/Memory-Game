@@ -1,10 +1,12 @@
 import React, { Component } from 'react';
 import './App.css';
-import Header from "./components/Header";
+// import Header from "./components/Header";
 import Container from "./components/Container";
 import GameCards from "./components/GameCards";
 import Scoreboard from "./components/Scoreboard";
+import Wrapper from "./components/Wrapper";
 import friends from "./characters.json";
+import Hero from "./components/Hero";
 
 //function for randomizing how cards are displayed
 function randomizeCards(array) {
@@ -24,7 +26,7 @@ class App extends Component {
     currentScore: 0,
     topScore: 0,
     selected: []
-    
+
   };
 
   // function for when user clicks card
@@ -33,13 +35,13 @@ class App extends Component {
       this.addToCurrentScore();
       this.setState({ selected: this.state.selected.concat(id) });
     } else {
-      console.log("you lose!")
+      alert("you lose!")
       this.resetGame();
     };
     // console.log('selectedFriend', selectedFriend)
     // console.log("id", friends.id)
     //  this.setState({ friends });
-    
+
     console.log('selected', this.state.selected)
     this.runRandomize()
   };
@@ -57,8 +59,8 @@ class App extends Component {
     if (this.state.currentScore >= this.state.topScore) {
       this.setState({ topScore: this.state.topScore + 1 });
     };
-    if (this.state.currentScore === 11 ) {
-      console.log("winner winner chicken dinner!")
+    if (this.state.currentScore === 11) {
+      alert("winner winner chicken dinner!")
       this.resetGame();
     };
   };
@@ -73,22 +75,29 @@ class App extends Component {
   // rendering to dom
   render() {
     return (
-      <Container>
+      <Wrapper>
         <Scoreboard
           currentScore={this.state.currentScore}
           topScore={this.state.topScore}
-         />
-        <Header>React Memory Game</Header>
-        
-        {this.state.friends.map(friend => (
-          <GameCards
-            selectCard={this.selectCard}
-            id={friend.id}
-            key={friend.id}
-            image={friend.image}
-          />
-        ))}
-      </Container>
+        />
+        <Hero backgroundImage="">
+          <h1>React Memory Game</h1>
+          <h2>To begin, click on any tile. Try to click all of them without clicking any one twice. Good luck!</h2>
+        </Hero>
+        <Container>
+
+
+
+          {this.state.friends.map(friend => (
+            <GameCards
+              selectCard={this.selectCard}
+              id={friend.id}
+              key={friend.id}
+              image={friend.image}
+            />
+          ))}
+        </Container>
+      </Wrapper>
     );
   };
 };
