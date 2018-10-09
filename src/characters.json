@@ -1,86 +1,74 @@
 [
   {
     "id": 1,
-    "name": "SpongeBob",
-    "image": "https://upload.wikimedia.org/wikipedia/en/thumb/4/47/Spongebob-squarepants.svg/666px-Spongebob-squarepants.svg.png",
-    "occupation": "Fry Cook",
-    "location": "A Pineapple Under the Sea"
+    "name": "Sterling Archer",
+    "image": "https://imgix.ranker.com/user_node_img/2740/54785270/original/sterling-archer-character-fictional-characters-tv-character-photo-u1?w=120&h=120&q=60&fm=jpg&fit=crop&crop=faces"
+    
   },
   {
     "id": 2,
-    "name": "Mr. Krabs",
-    "image": "https://vignette3.wikia.nocookie.net/vsbattles/images/8/80/Mr._Krabs.png/revision/latest?cb=20150919162131",
-    "occupation": "Restaurant Owner",
-    "location": "A Giant Anchor"
+    "name": "Dr Krieger",
+    "image": "https://imgix.ranker.com/user_node_img/3144/62863783/original/dr-krieger-tv-characters-photo-u1?w=120&h=120&q=60&fm=jpg&fit=crop&crop=faces"
+    
   },
   {
     "id": 3,
-    "name": "Squidward",
-    "image": "https://vignette2.wikia.nocookie.net/fictionalcharacters/images/a/ac/Squidward.png/revision/latest?cb=20131121012626",
-    "occupation": "Cashier",
-    "location": "An Easter Island Head"
+    "name": "Pam Poovey",
+    "image": "https://imgix.ranker.com/user_node_img/3144/62863508/original/pam-tv-characters-photo-u1?w=120&h=120&q=60&fm=jpg&fit=crop&crop=faces"
+    
   },
   {
     "id": 4,
-    "name": "Dexter",
-    "image": "https://s-media-cache-ak0.pinimg.com/originals/fe/32/49/fe32495d45283cd6860ae122f0aeaad9.png",
-    "occupation": "Boy Genius",
-    "location": "A Secret Laboratory"
+    "name": "Cheryl Tunt",
+    "image": "https://imgix.ranker.com/user_node_img/2740/54785269/original/carol-tv-characters-photo-u1?w=120&h=120&q=60&fm=jpg&fit=crop&crop=faces"
+    
   },
   {
     "id": 5,
-    "name": "Courage",
-    "image": "https://vignette4.wikia.nocookie.net/vsbattles/images/3/39/Courage-0.png/revision/latest?cb=20160719055423",
-    "occupation": "A Cowardly Dog",
-    "location": "Nowhere, Kansas"
+    "name": "Ray Gillette",
+    "image": "https://imgix.ranker.com/user_node_img/3143/62853409/original/ray-gillette-tv-characters-photo-u1?w=120&h=120&q=60&fm=jpg&fit=crop&crop=faces"
+    
   },
   {
     "id": 6,
-    "name": "Doug Funnie",
-    "image": "https://vignette1.wikia.nocookie.net/doug/images/3/3b/Doug001.gif/revision/latest?cb=20110807170511",
-    "occupation": "Student",
-    "location": "Bluffington"
+    "name": "Lana Kane",
+    "image": "https://imgix.ranker.com/user_node_img/2740/54785266/original/lana-kane-tv-characters-photo-u2?w=120&h=120&q=60&fm=jpg&fit=crop&crop=faces"
+   
   },
   {
     "id": 7,
-    "name": "Bugs Bunny",
-    "image": "https://vignette2.wikia.nocookie.net/deathbattlefanon/images/2/2b/Bugs_Bunny.png/revision/latest?cb=20151206010607",
-    "occupation": "Looney Toon",
-    "location": "A Rabbit Burrow"
+    "name": "Woodhouse",
+    "image": "https://imgix.ranker.com/user_node_img/2740/54785268/original/woodhouse-tv-characters-photo-u1?w=120&h=120&q=60&fm=jpg&fit=crop&crop=faces"
+    
   },
   {
     "id": 8,
-    "name": "Johnny Bravo",
-    "image": "http://vignette3.wikia.nocookie.net/p__/images/9/9a/Johnny_Bravo.png/revision/latest?cb=20131031233339&path-prefix=protagonist",
-    "occupation": "Ladies Man",
-    "location": "Aron City"
+    "name": "Malory Archer",
+    "image": "https://imgix.ranker.com/user_node_img/2740/54785274/original/malory-archer-tv-characters-photo-u1?w=120&h=120&q=60&fm=jpg&fit=crop&crop=faces"
+   
   },
   {
     "id": 9,
-    "name": "Tommy Pickles",
-    "image": "https://vignette4.wikia.nocookie.net/uncyclopedia/images/e/e4/Tommy_Pickles.png/revision/latest?cb=20110530102641",
-    "occupation": "Adventurer",
-    "location": "California"
+    "name": "Cyril Figgis",
+    "image": "https://imgix.ranker.com/user_node_img/2740/54785265/original/cyril-figgis-tv-characters-photo-u1?w=120&h=120&q=60&fm=jpg&fit=crop&crop=faces"
+  
   },
   {
     "id": 10,
-    "name": "Rocko",
-    "image": "http://vignette3.wikia.nocookie.net/rockosmodernlife/images/9/9e/Rockos-modern-life-4e582a8f06a41.png/revision/latest?cb=20130522173416",
-    "occupation": "Cashier",
-    "location": "O-Town, California"
+    "name": "Len Trexler",
+    "image": "https://imgix.ranker.com/user_node_img/3143/62850546/original/len-trexler-tv-characters-photo-u1?w=120&h=120&q=60&fm=jpg&fit=crop&crop=faces"
+  
   },
   {
     "id": 11,
-    "name": "Captain Planet",
-    "image": "http://vignette2.wikia.nocookie.net/dragon-rap-battles/images/b/b6/Captain_Planet.png/revision/latest?cb=20160911200836",
-    "occupation": "Superhero",
-    "location": "Earth"
+    "name": "Burt Reynolds",
+    "image": "https://imgix.ranker.com/user_node_img/3171/63401176/original/burt-reynolds-tv-characters-photo-u2?w=120&h=120&q=60&fm=jpg&fit=crop&crop=faces"
+    
   },
   {
     "id": 12,
-    "name": "Ickis",
-    "image": "http://static.tvtropes.org/pmwiki/pub/images/ickis.png",
-    "occupation": "Ahhhh! A Real Monster!",
-    "location": "Under a City Dump"
+    "name": "Slater",
+    "image": "https://imgix.ranker.com/user_node_img/50028/1000555208/original/slater-tv-characters-photo-u1?w=87&h=87&fit=crop&crop=faces&q=60&fm=jpg"
+
   }
 ]
